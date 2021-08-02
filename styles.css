@@ -1,0 +1,57 @@
+body {
+    background-color: #FFE3E3;
+    color: #262A53;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+}
+
+.show-results {
+    display: flex;
+}
+
+.result {
+    margin: 10px 50px 10px;
+}
+
+.choices {
+    display: flex;
+    border: 5px solid #262A53;
+}
+
+.empty-image {
+    border-radius: 50%;
+    border: solid 2px #262A53;
+    width: 200px;
+    height: 200px;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.rock-image {
+    background: url("images/rock.png") no-repeat center;
+    width: 175px;
+    height: 175px;
+    margin: 50px;
+}
+
+.paper-image {
+    background: url("images/paper.png") no-repeat center;
+    width: 175px;
+    height: 175px;
+    margin: 50px;
+}
+
+.scissors-image {
+    background: url("images/scissors.png") no-repeat center;
+    width: 175px;
+    height: 175px;
+    margin: 50px;
+}

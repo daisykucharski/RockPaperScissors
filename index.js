@@ -1,18 +1,16 @@
 let playerScore = 0;
 let computerScore = 0;
 
-// Plays five rounds of Rock, Paper, Scissors
+// Plays rock paper scissors until the player or computer reaches 5 points
 function game() {
-    for (i = 0; i < 5; i++) {
+    while (playerScore < 5 && computerScore < 5) {
         const player = promptPlayer();
         const computer = computerPlay();
         const msg = playRound(player, computer);
         console.log(msg);
     }
     const finalScores = playerScore + "-" + computerScore;
-    if (playerScore === computerScore) {
-        console.log("It's a tie! " +  finalScores);
-    } else if (playerScore < computerScore) {
+    if (playerScore < computerScore) {
         console.log("The computer wins! " + finalScores);
     } else {
         console.log("You win! " + finalScores);
