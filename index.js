@@ -13,6 +13,9 @@ document.querySelector("div.scissors-image.button").addEventListener("click", ()
     game("scissors");
 });
 
+
+// Plays the game using the given player selection. If a game has already been won, it resets the scores. Notifies after
+// the round is played if a user won
 function game(player) {
     if (playerScore === 5 || computerScore === 5) {
         playerScore = 0;
