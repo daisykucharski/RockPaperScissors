@@ -22,13 +22,16 @@ p {
 .choices {
     display: flex;
     border: 5px solid #262A53;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .empty-image {
     border-radius: 50%;
     border: solid 2px #262A53;
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
+    margin: 50px;
 }
 
 .button:hover {
